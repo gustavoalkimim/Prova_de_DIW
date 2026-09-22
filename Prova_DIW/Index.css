@@ -57,7 +57,7 @@ table th{
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%); /*precisei usar isso pra tudo ficar do jeito certo*/
+    margin-left: -350px;
     width: 700px;
     box-sizing: border-box;
     background-color: grey;
