@@ -1,0 +1,88 @@
+*{ /* Seleciona todos os elementos da página e remove a margem padrão do navegador. */
+    margin: 0; /* Remove a margem externa padrão de todos os elementos. */
+    box-sizing: border-box; /* Faz com que width e height incluam padding e borda no cálculo. */
+}
+
+body{ /* Estiliza o corpo da página. */
+    background-color: antiquewhite; /* Define a cor de fundo da página como bege claro. */
+}
+
+header{ /* Estiliza o cabeçalho da página. */
+    width: 100%; /* Faz o cabeçalho ocupar toda a largura disponível da tela. */
+    height: 100px; /* Define a altura do cabeçalho. */
+    background-color: black; /* Coloca fundo preto no cabeçalho. */
+    border-end-start-radius: 25px; /* Arredonda a borda inferior esquerda do cabeçalho. */
+    border-end-end-radius: 25px; /* Arredonda a borda inferior direita do cabeçalho. */
+    display: flex; /* Torna o cabeçalho um container flexível. */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles no cabeçalho. */
+    align-items: center; /* Alinha verticalmente os itens ao centro. */
+    position: sticky; /* Faz o cabeçalho ficar preso no topo ao rolar a página. */
+    top: 0; /* Define a posição no topo da tela. */
+    z-index: 10; /* Garante que o cabeçalho fique acima de outros elementos. */
+}
+
+.menu{ /* Estiliza o botão de menu. */
+    font-size: 28px; /* Aumenta o tamanho do ícone/menu. */
+    cursor: pointer; /* Muda o cursor para mão ao passar por cima. */
+    margin-left: 20px; /* Deixa espaço à esquerda do botão. */
+    margin-right: 20px; /* Deixa espaço à direita do botão. */
+    margin-top: 10px; /* Afasta o botão do topo do cabeçalho. */
+    margin-bottom: 10px; /* Afasta o botão da parte inferior do cabeçalho. */
+    background: transparent; /* Remove o fundo do botão. */
+    border: none; /* Remove a borda do botão. */
+    color: white; /* Deixa o ícone/menu branco. */
+}
+
+.menu:hover{ /* Quando o mouse passar por cima do botão, aplica essa estilização. */
+    color: blue; /* Muda a cor do ícone/menu para azul. */
+}
+
+.titulo{ /* Estiliza o título principal do cabeçalho. */
+    flex: 1; /* Faz o título ocupar o espaço restante do cabeçalho. */
+    text-align: center; /* Centraliza o texto horizontalmente. */
+    color: aliceblue; /* Define a cor do texto em branco azulado. */
+    font-family: 'Palatino', 'Palatino Linotype', 'Georgia', serif; /* Define uma fonte com aparência elegante e clássica. */
+    font-style: italic; /* Deixa o texto em itálico. */
+    font-size: 2rem; /* Define o tamanho da fonte como 2rem. */
+    letter-spacing: 1px; /* Dá um pequeno espaçamento entre as letras. */
+    margin: 0; /* Remove a margem padrão do h1. */
+}
+
+table{ /* Estiliza a tabela inteira. */
+    width: 100%; /* Faz a tabela ocupar toda a largura da página. */
+    border-collapse: collapse; /* Junta as bordas das células da tabela. */
+}
+
+td{ /* Estiliza cada célula da tabela. */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte dentro da célula. */
+    border: 2px solid #333; /* Cria borda escura em cada célula. */
+    padding: 10px; /* Dá espaço interno dentro da célula. */
+    vertical-align: middle; /* Centraliza o conteúdo verticalmente na célula. */
+}
+
+td img { /* Seleciona todas as imagens que estão dentro de células da tabela. */
+    display: block; /* Faz a imagem se comportar como bloco, eliminando espaço inline. */
+    width: 100%; /* Faz a imagem preencher a largura da célula. */
+    height: 100%; /* Faz a imagem preencher a altura da célula. */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer, cortando partes se necessário. */
+}
+
+.Ultima-imagem img{ /* Estiliza a imagem da última célula da tabela, que tem a classe Ultima-imagem. */
+    display: block; /* Garante que a imagem fique como bloco. */
+    width: 100%; /* Ocupa toda a largura da célula. */
+    height: 500px; /* Define uma altura fixa para a última imagem. */
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer. */
+}
+
+.bnt-footer{ /* Estiliza o botão de rodapé. */
+    display: block; /* Faz o botão ocupar uma linha inteira, permitindo centralização. */
+    margin: 20px auto; /* Coloca margem acima/abaixo e centraliza horizontalmente. */
+    padding: 20px 60px; /* Dá espaço interno maior no botão. */
+    background-color: blue; /* Cor de fundo azul. */
+    color: white; /* Cor do texto branca. */
+    border: none; /* Remove a borda do botão. */
+    border-radius: 12px; /* Arredonda os cantos do botão. */
+    font-size: 1.5rem; /* Aumenta o texto do botão. */
+    font-weight: bold; /* Deixa o texto mais forte/negrito. */
+    cursor: pointer; /* Muda o cursor para mão ao passar por cima. */
+}

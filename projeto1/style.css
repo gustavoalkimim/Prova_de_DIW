@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- HEADER --- */
+header {
+  width: 100vw;
+  height: 100px;
+  background-color: rgb(200, 200, 200);
+  border-end-end-radius: 25px;
+  border-end-start-radius: 25px;
+  display: flex;
+  justify-content: space-between;  /* Separa o botão, o título e os links */
+  align-items: center;            /* Centraliza os itens verticalmente */
+  padding: 0 20px;
+}
+
+/* Botão do menu hambúrguer */
+.menu {
+  background: transparent;        /* Remove o fundo padrão do botão */
+  border: none;                   /* Remove a borda padrão do botão */
+  font-size: 28px;                /* Aumenta o tamanho das 3 linhas */
+  cursor: pointer;                /* Transforma o ponteiro em mãozinha */
+}
+
+.menu:hover {
+  color: blue;                    /* Muda a cor das 3 linhas para azul no hover */
+}
+
+/* Título central */
+.Titulo-header {
+  font-size: 24px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* Links do topo */
+.header-links {
+  display: flex;
+  flex-direction: column;         /* Empilha o Link 1 e o Link 2 */
+  align-items: flex-end;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.header-links a:hover {
+  color: blue;                    /* Deixa os links azuis no hover */
+}
+
+/* --- MAIN (Container Principal) --- */
+main {
+  display: flex;                   /* Ativa o Flexbox para colocar as duas colunas lado a lado */
+  justify-content: space-between;  /* Separa a coluna esquerda da direita */
+  gap: 40px;                       /* Distância de 40px entre a esquerda e a direita */
+  padding: 40px 50px;              /* Espaçamento interno da página */
+  flex: 1;                         /* Ocupa o espaço entre o header e o footer */
+}
+
+/* --- LADO ESQUERDO --- */
+.coluna {
+  display: flex;                   /* Ativa Flexbox na coluna */
+  flex-direction: column;          /* Empilha os itens verticalmente */
+  width: 350px;                    /* Largura fixa do lado esquerdo */
+}
+
+.card {
+  border: 2px solid #ccc;          /* Borda cinza de 2px */
+  border-radius: 15px;             /* Cantos arredondados */
+  padding: 30px 20px;              /* Respiro interno da caixa */
+  text-align: center;              /* Centraliza texto e botão */
+  background-color: #f9f9f9;       /* Fundo cinza bem claro */
+}
+
+.texto-card {
+  font-size: 20px;                 /* Tamanho da fonte no card */
+  font-weight: bold;               /* Deixa o texto em negrito */
+  margin-bottom: 15px;             /* Espaço entre texto e botão */
+}
+
+.bnt-card {
+  padding: 8px 16px;               /* Tamanho interno do botão */
+  font-size: 14px;                 /* Tamanho do texto do botão */
+  cursor: pointer;                 /* Mãozinha ao passar o mouse */
+}
+
+.Titulo-lista {
+  margin-top: 20px;                /* Espaço acima do subtítulo */
+  font-size: 16px;                 /* Tamanho da fonte */
+  color: #333;                     /* Cor cinza escuro */
+}
+
+.lista {
+  margin-top: 8px;                 /* Espaço acima da lista */
+  padding-left: 20px;              /* Recuo para aparecerem as bolinhas */
+}
+
+/* --- LADO DIREITO --- */
+main > div:nth-child(2) {
+  flex: 1;                         /* Faz a div da direita ocupar todo o restante da largura */
+}
+
+.texto-direito {
+  display: flex;                   /* Ativa Flexbox na div de textos */
+  flex-direction: column;          /* Empilha o parágrafo, subtítulo e link */
+}
+
+.texto-direito p {
+  color: #e57373;                  /* Vermelho claro */
+  font-size: 18px;                 /* Tamanho da fonte */
+  margin-bottom: 15px;             /* Espaço abaixo do parágrafo */
+}
+
+.texto-direito h4 {
+  color: #8b0000;                  /* Vermelho escuro/forte */
+  font-size: 26px;                 /* Tamanho grande */
+  font-weight: bold;               /* Negrito */
+}
+
+.link {
+  align-self: flex-end;            /* Joga o link no canto inferior direito */
+  margin-top: 10px;                /* Afasta 10px do subtítulo */
+  font-size: 12px;                 /* Fonte bem pequena */
+  color: #8b0000;                  /* Vermelho escuro */
+  text-decoration: none;           /* Remove o sublinhado padrão */
+}
+
+.link:hover {
+  text-decoration: underline;      /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* --- FOOTER --- */
+footer {
+  height: 200px;
+  width: 100vw;
+  font-weight: 200;
+  background-color: rgb(200, 200, 200);
+  border-start-start-radius: 25px;
+  border-start-end-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer div a {
+  color: black;
+  text-decoration: none;
+}
